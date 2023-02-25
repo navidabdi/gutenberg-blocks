@@ -43,7 +43,7 @@ class Plugin {
 
 	public static function gutenbergBlocksInit(): void {
 		self::gutenbergBlocksRegister('bootstrap');
-		self::gutenbergBlocksRegister('block-test');
+		self::gutenbergBlocksRegister('image-box');
 	}
 
 	public static function gutenbergBlocksRegisterCategory($categories, $post): array {

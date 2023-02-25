@@ -1,11 +1,11 @@
 {
 	"apiVersion": 2,
-	"name": "naviddev-gutenberg-blocks/test",
+	"name": "naviddev-gutenberg-blocks/image-box",
 	"version": "0.1.0",
-	"title": "test Block",
+	"title": "Image Box",
 	"category": "naviddev-gutenberg-blocks",
-	"icon": "calendar-alt",
-	"description": "Example block written with ESNext standard and JSX support build step required.",
+	"icon": "image",
+	"description": "Image box block",
 	"supports": {
 		"html": false,
 		"anchor": true
