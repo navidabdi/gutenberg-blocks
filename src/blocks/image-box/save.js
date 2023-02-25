@@ -1,11 +1,11 @@
-// import { __ } from '@wordpress/i18n';
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import {useBlockProps, RichText} from '@wordpress/block-editor';
 
-export default function save({ attributes }) {
-	const { content, color } = attributes;
+export default function Save({attributes}) {
+	const {content, color, image} = attributes;
 	return (
 		<div {...useBlockProps.save()}>
-			<RichText.Content tagName="h4" value={content} style={{ color }} />
+			<img className="" src={image}/>
+			<RichText.Content tagName="h4" value={content} style={{color}}/>
 		</div>
 	);
 }
