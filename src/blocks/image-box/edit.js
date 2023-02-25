@@ -13,7 +13,7 @@ import colors from '../../utilities/colors-palette';
 import {ImagePlaceholder} from '../../images';
 
 export default function Edit({attributes, setAttributes}) {
-	const {content, color, image} = attributes;
+	const {heading, headingColor, content, contentColor, color, image} = attributes;
 	const ALLOWED_MEDIA_TYPES = ['image'];
 	return (
 		<Fragment>
@@ -36,23 +36,37 @@ export default function Edit({attributes, setAttributes}) {
 					<img className="feature-icon" src={image}/>
 
 					<p className="custom__editor__label">
-						{__('Text Color', 'naviddev-gutenberg-blocks')}
+						{__('Title Color', 'naviddev-gutenberg-blocks')}
 					</p>
 					<ColorPalette
 						colors={colors}
-						value={color}
-						onChange={(newColor) => setAttributes({color: newColor})}
+						value={headingColor}
+						onChange={(newColor) => setAttributes({headingColor: newColor})}
+					/>
+					<p className="custom__editor__label">
+						{__('Content Color', 'naviddev-gutenberg-blocks')}
+					</p>
+					<ColorPalette
+						colors={colors}
+						value={contentColor}
+						onChange={(newColor) => setAttributes({contentColor: newColor})}
 					/>
 				</PanelBody>
 			</InspectorControls>
 
 			<div {...useBlockProps()}>
-				<img className="feature-icon" src={image}/>
+				<img className="feature-icon" src={image ?? ImagePlaceholder}/>
 				<RichText
 					tagName="h4"
+					value={heading}
+					onChange={(newContent) => setAttributes({heading: newContent})}
+					style={{headingColor}}
+				/>
+				<RichText
+					tagName="p"
 					value={content}
 					onChange={(newContent) => setAttributes({content: newContent})}
-					style={{color}}
+					style={{contentColor}}
 				/>
 			</div>
 		</Fragment>

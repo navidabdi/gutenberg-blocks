@@ -11,13 +11,21 @@
 	"anchor": true
   },
   "attributes": {
+	"heading": {
+	  "type": "string",
+	  "default": "This is a title!"
+	},
 	"content": {
 	  "type": "string",
-	  "default": "Hello World!"
+	  "default": "Lorem ipsum dolor sit amet, consec tetur adipis cing elit. Ut elit tellus, luctus nullam corper mattis, pulvinar dapibus"
 	},
-	"color": {
+	"headingColor": {
 	  "type": "string",
-	  "default": "#00ff00"
+	  "default": "#1e222c"
+	},
+	"contentColor": {
+	  "type": "string",
+	  "default": "#3a445e"
 	},
 	"image": {
 	  "type": "string",
