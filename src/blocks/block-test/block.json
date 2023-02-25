@@ -1,0 +1,27 @@
+{
+	"apiVersion": 2,
+	"name": "naviddev-gutenberg-blocks/test",
+	"version": "0.1.0",
+	"title": "test Block",
+	"category": "naviddev-gutenberg-blocks",
+	"icon": "calendar-alt",
+	"description": "Example block written with ESNext standard and JSX support build step required.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Hello World!"
+		},
+		"color": {
+			"type": "string",
+			"default": "#00ff00"
+		}
+	},
+	"textdomain": "naviddev-gutenberg-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

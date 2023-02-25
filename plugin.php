@@ -63,6 +63,7 @@ final class GutenbergBlocks {
 
 	public function gutenbergBlocksInit() {
 		$this->gutenbergBlocksRegister('bootstrap');
+		$this->gutenbergBlocksRegister('block-test');
 	}
 
 	public function gutenbergBlocksRegisterCategory($categories, $post) {

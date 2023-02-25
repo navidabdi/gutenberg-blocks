@@ -3,3 +3,4 @@
  */
 
 import './blocks/bootstrap/index';
+import './blocks/block-test/index';
