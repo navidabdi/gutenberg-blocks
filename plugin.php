@@ -6,10 +6,10 @@
  * Requires PHP:      7.0
  * Version:           0.1.0
  * Author:            Nabi Abdi
- * Author URI:        https://webkima.com
+ * Author URI:        https://naviddev.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       gutenberg-blocks
+ * Text Domain:       naviddev-gutenberg-blocks
  */
 
 // Stop Direct Access 
@@ -69,8 +69,8 @@ final class GutenbergBlocks {
 		return array_merge(
 			[
 				[
-					'slug'  => 'gutenberg-blocks',
-					'title' => __('Gutenberg Blocks', 'gutenberg-blocks'),
+					'slug'  => 'naviddev-gutenberg-blocks',
+					'title' => __('NavidDev Gutenberg Blocks', 'naviddev-gutenberg-blocks'),
 				],
 			],
 			$categories,

@@ -1,9 +1,9 @@
 {
 	"apiVersion": 2,
-	"name": "boilerplate/bootstrap",
+	"name": "naviddev-gutenberg-blocks/bootstrap",
 	"version": "0.1.0",
 	"title": "Bootstrap Block",
-	"category": "boilerplate",
+	"category": "naviddev-gutenberg-blocks",
 	"icon": "smiley",
 	"description": "Example block written with ESNext standard and JSX support build step required.",
 	"supports": {
@@ -20,7 +20,7 @@
 			"default": "#00ff00"
 		}
 	},
-	"textdomain": "boilerplate",
+	"textdomain": "naviddev-gutenberg-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"
