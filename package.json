@@ -1,22 +1,41 @@
 {
-	"name": "test-block",
+	"name": "gutenberg-blocks",
 	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
+	"description": "An addon for Gutenberg plugin.",
+	"author": "Nabi Abdi",
 	"license": "GPL-2.0-or-later",
-	"main": "build/index.js",
+	"main": "build/blocks/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/navidabdi/gutenberg-blocks.git"
+	},
+	"keywords": [
+		"wordpress",
+		"gutenberg",
+		"blocks",
+		"gutenberg blocks development",
+		"wordpress gutenberg blocks development",
+		"wordpress gutenberg blocks",
+		"wordpress gutenberg blocks development boilerplate"
+	],
+	"prettier": "@wordpress/prettier-config",
+	"stylelint": {
+		"extends": "@wordpress/stylelint-config/scss"
+	},
 	"scripts": {
-		"build": "wp-scripts build --webpack-copy-php",
+		"build": "wp-scripts build",
 		"format": "wp-scripts format",
 		"lint:css": "wp-scripts lint-style",
 		"lint:js": "wp-scripts lint-js",
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "wp-scripts plugin-zip",
-		"start": "wp-scripts start --webpack-copy-php",
-		"env": "wp-env"
+		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^5.12.0",
-		"@wordpress/scripts": "^25.4.0"
+		"@wordpress/eslint-plugin": "^13.2.0",
+		"@wordpress/prettier-config": "^2.1.0",
+		"@wordpress/scripts": "^24.2.0",
+		"@wordpress/stylelint-config": "^21.1.0",
+		"eslint-config-prettier": "^8.3.0"
 	}
 }
