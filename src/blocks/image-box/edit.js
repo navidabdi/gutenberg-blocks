@@ -13,7 +13,7 @@ import colors from '../../utilities/colors-palette';
 import {ImagePlaceholder} from '../../images';
 
 export default function Edit({attributes, setAttributes}) {
-	const {heading, headingColor, content, contentColor, color, image} = attributes;
+	const {heading, headingColor, content, contentColor, image} = attributes;
 	const ALLOWED_MEDIA_TYPES = ['image'];
 	return (
 		<Fragment>

@@ -1,11 +1,12 @@
 import {useBlockProps, RichText} from '@wordpress/block-editor';
 
 export default function Save({attributes}) {
-	const {content, color, image} = attributes;
+	const {heading, headingColor, content, contentColor, image} = attributes;
 	return (
 		<div {...useBlockProps.save()}>
 			<img className="" src={image}/>
-			<RichText.Content tagName="h4" value={content} style={{color}}/>
+			<RichText.Content tagName="h4" value={heading} style={{headingColor}}/>
+			<RichText.Content tagName="p" value={content} style={{contentColor}}/>
 		</div>
 	);
 }
