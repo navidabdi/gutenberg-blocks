@@ -37,5 +37,11 @@
 		"@wordpress/scripts": "^25.4.0",
 		"@wordpress/stylelint-config": "^21.10.0",
 		"eslint-config-prettier": "^8.6.0"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^11.4.0",
+		"@wordpress/blocks": "^12.4.0",
+		"@wordpress/components": "^23.4.0",
+		"@wordpress/i18n": "^4.27.0"
 	}
 }

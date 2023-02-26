@@ -37,13 +37,17 @@ class Plugin {
 		}
 	}
 
-	public static function gutenbergBlocksRegister($name, $options = []): void {
-		register_block_type(self::getBasePath() . '/build/blocks/' . $name, $options);
+	public static function getBlocksName(): array {
+		return [
+			'bootstrap',
+			'image-box'
+		];
 	}
 
 	public static function gutenbergBlocksInit(): void {
-		self::gutenbergBlocksRegister('bootstrap');
-		self::gutenbergBlocksRegister('block-test');
+		foreach (self::getBlocksName() as $block_name) {
+			register_block_type(self::getBasePath() . '/build/blocks/' . $block_name);
+		}
 	}
 
 	public static function gutenbergBlocksRegisterCategory($categories, $post): array {
