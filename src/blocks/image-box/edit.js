@@ -14,12 +14,13 @@ import {ImagePlaceholder} from '../../images';
 
 export default function Edit({attributes, setAttributes}) {
 	const {heading, headingColor, content, contentColor, image} = attributes;
+	let imageUrl = image !== '' ? image : ImagePlaceholder;
 	const ALLOWED_MEDIA_TYPES = ['image'];
 	return (
 		<Fragment>
 			<InspectorControls>
 				<PanelBody
-					title={__('Settings', 'naviddev-gutenberg-blocks')}
+					title={__('Image Picker', 'naviddev-gutenberg-blocks')}
 					initialOpen={true}
 				>
 					<MediaUploadCheck>
@@ -28,13 +29,17 @@ export default function Edit({attributes, setAttributes}) {
 							allowedTypes={ALLOWED_MEDIA_TYPES}
 							value={image}
 							render={({open}) => (
-								<Button onClick={open}>Open Media Library</Button>
+								<Button className="is-primary" onClick={open}>Open Media Library</Button>
 							)}
 						/>
 					</MediaUploadCheck>
 
-					<img className="feature-icon" src={image}/>
-
+					<img className="feature-icon" src={imageUrl} alt="feature-icon"/>
+				</PanelBody>
+				<PanelBody
+					title={__('Typography', 'naviddev-gutenberg-blocks')}
+					initialOpen={false}
+				>
 					<p className="custom__editor__label">
 						{__('Title Color', 'naviddev-gutenberg-blocks')}
 					</p>
@@ -55,7 +60,7 @@ export default function Edit({attributes, setAttributes}) {
 			</InspectorControls>
 
 			<div {...useBlockProps()}>
-				<img className="feature-icon" src={image ?? ImagePlaceholder}/>
+				<img className="feature-icon" src={imageUrl}/>
 				<RichText
 					tagName="h4"
 					value={heading}
