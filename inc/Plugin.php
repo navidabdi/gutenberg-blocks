@@ -31,8 +31,7 @@ class Plugin {
 		// blocks category
 		if (version_compare($GLOBALS['wp_version'], '5.7', '<')) {
 			add_filter('block_categories', __CLASS__ . '::gutenbergBlocksRegisterCategory', 10, 2);
-		}
-		else {
+		} else {
 			add_filter('block_categories_all', __CLASS__ . '::gutenbergBlocksRegisterCategory', 10, 2);
 		}
 	}
