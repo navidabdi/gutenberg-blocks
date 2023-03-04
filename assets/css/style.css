@@ -1,0 +1,4 @@
+/* Button Styles */
+.wp-block-button.is-style-fill-base .wp-block-button__link {
+    background: red;
+}
