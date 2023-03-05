@@ -1,4 +1,26 @@
-/* Button Styles */
-.wp-block-button.is-style-fill-base .wp-block-button__link {
+/* Button Styles
+------------------------------------------- */
+.wp-block-button.is-style-fill-red .wp-block-button__link {
     background: red;
+}
+
+.wp-block-button.is-style-outline-blue .wp-block-button__link {
+    border: 4px blue solid;
+}
+
+/* Image Styles
+------------------------------------------- */
+.wp-block-image.is-style-shadow {
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Quote Styles
+------------------------------------------- */
+.wp-block-quote.is-style-shadow {
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.15);
+}
+
+.wp-block-quote.is-style-outline {
+    border: 4px black solid !important;
 }

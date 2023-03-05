@@ -70,11 +70,15 @@ class Plugin {
 	public static function registerBlockStyles() {
 		$block_styles = [
 			'core/image' => [
-				'shadow'         => __('shadow', 'textdomain'),
+				'shadow'         => __('Shadow', 'textdomain'),
 			],
 			'core/button' => [
-				'fill-base'         => __('Fill Base', 'textdomain'),
-				'outline-base'      => __('Outline Base', 'textdomain'),
+				'fill-red'         => __('Fill Red', 'textdomain'),
+				'outline-blue'      => __('Outline Blue', 'textdomain'),
+			],
+			'core/quote' => [
+				'shadow'         => __('Shadow', 'textdomain'),
+				'outline'      => __('Outline', 'textdomain'),
 			],
 		];
 
