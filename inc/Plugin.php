@@ -80,6 +80,9 @@ class Plugin {
 				'shadow'         => __('Shadow', 'textdomain'),
 				'outline'      => __('Outline', 'textdomain'),
 			],
+			'core/group' => [
+				'shadow-solid'         => __('Shadow Solid', 'textdomain'),
+			],
 		];
 
 		foreach ($block_styles as $block => $styles) {
@@ -98,7 +101,7 @@ class Plugin {
 	public static function registerBlockAssets() {
 		wp_enqueue_script(
 			'gutenberg-blocks-js',
-			GUTENBERG_BLOCKS_INC_URL . 'js/plugin.js',
+			GUTENBERG_BLOCKS_INC_URL . 'js/variations.js',
 			['wp-blocks', 'wp-dom-ready', 'wp-edit-post'],
 			GUTENBERG_BLOCKS_VERSION,
 			TRUE

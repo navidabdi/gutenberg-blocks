@@ -24,3 +24,9 @@
 .wp-block-quote.is-style-outline {
     border: 4px black solid !important;
 }
+
+/* Group Styles
+------------------------------------------- */
+.wp-block-group.is-style-shadow-solid {
+    box-shadow: 5px 5px var(--wp--preset--color--contrast);
+}
